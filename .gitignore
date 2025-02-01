@@ -1,0 +1,38 @@
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de Unity generados automáticamente
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+
+# Archivos de VSCode y JetBrains
+.vscode/
+.idea/
+
+# Archivos específicos de Unity
+*.pidb
+*.sln
+*.userprefs
+*.csproj
+*.unityproj
+*.asset
+*.meta
+*.rsp
+
+# Carpetas del Asset Store
+AssetStoreTools*
+
+# Archivos temporales de compilación
+*.bak
+*.swp
+*.lock
+*.tmp
+
+# Configuraciones específicas del Editor
+[Tt]exture[Pp]acker/
