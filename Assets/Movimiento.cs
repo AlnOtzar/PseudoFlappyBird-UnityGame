@@ -27,7 +27,7 @@ public class Movimiento : MonoBehaviour
 
     private void Flap()
     {
-        playerRB.velocity = Vector2.zero;
+        playerRB.linearVelocity = Vector2.zero;
         playerRB.AddForce(Vector2.up * upForce);
         playerAnimator.SetTrigger("Flap");
     }
