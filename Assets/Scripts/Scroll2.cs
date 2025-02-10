@@ -4,7 +4,7 @@ public class Scroll1 : MonoBehaviour
 {
     [SerializeField] private float speed = 2.5f;  // Velocidad de desplazamiento
     [SerializeField] private float resetX = -10f; // Límite izquierdo donde se reinicia
-    [SerializeField] private float spacing = 3.5f; // Espaciado entre tubos
+    [SerializeField] private float spacing = 2.5f; // Espaciado constante entre tubos
     [SerializeField] private float minY = -2f;    // Altura mínima aleatoria
     [SerializeField] private float maxY = 2f;     // Altura máxima aleatoria
 
@@ -13,12 +13,12 @@ public class Scroll1 : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.velocity = Vector2.left * speed; // Mueve los tubos hacia la izquierda
+        rb.linearVelocity = Vector2.left * speed;  // Sincroniza la velocidad de desplazamiento
     }
 
     void Update()
     {
-        if (transform.position.x < resetX) // Si el tubo sale de la pantalla
+        if (transform.position.x < resetX)  // Si el tubo sale de la pantalla
         {
             ResetPosition();
         }
@@ -29,27 +29,29 @@ public class Scroll1 : MonoBehaviour
         // Encuentra el tubo más a la derecha
         float maxX = FindFarthestTube();
 
-        // Genera altura aleatoria
+        // Genera altura aleatoria dentro del rango permitido
         float randomY = Random.Range(minY, maxY);
 
-        // Reposiciona el tubo al final del último tubo más un espacio
+        // Reposiciona el tubo al final del último tubo más un espacio constante
         transform.position = new Vector3(maxX + spacing, randomY, transform.position.z);
+
+        // Debug opcional para verificar posiciones
+        Debug.Log($"Reposicionando tubo a X: {maxX + spacing}, Y: {randomY}");
     }
 
-   private float FindFarthestTube()
-{
-    GameObject[] tubes = GameObject.FindGameObjectsWithTag("grupotubos");
-    float maxX = float.MinValue;
-
-    foreach (GameObject tube in tubes)
+    private float FindFarthestTube()
     {
-        if (tube.transform.position.x > maxX)
+        GameObject[] tubes = GameObject.FindGameObjectsWithTag("tubos");
+        float maxX = float.MinValue;
+
+        foreach (GameObject tube in tubes)
         {
-            maxX = tube.transform.position.x;
+            if (tube.transform.position.x > maxX)
+            {
+                maxX = tube.transform.position.x;
+            }
         }
+
+        return maxX;
     }
-
-    return maxX;
-}
-
 }
