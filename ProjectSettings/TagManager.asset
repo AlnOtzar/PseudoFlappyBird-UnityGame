@@ -6,6 +6,10 @@ TagManager:
   tags:
   - grupotubos
   - tubos
+  - Puntuacion
+  - puntos
+  - player
+  - puntuacion
   layers:
   - Default
   - TransparentFX
