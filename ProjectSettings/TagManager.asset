@@ -10,6 +10,7 @@ TagManager:
   - puntos
   - player
   - puntuacion
+  - fondo
   layers:
   - Default
   - TransparentFX

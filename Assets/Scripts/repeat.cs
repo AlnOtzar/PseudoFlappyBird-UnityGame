@@ -6,21 +6,36 @@ public class repeat : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        BoxCollider2D groundCollider = GetComponent<BoxCollider2D>();
-        spriteWidth = groundCollider.size.x;
-        
+        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteWidth = spriteRenderer.bounds.size.x; // Obtiene el tamaño real del sprite
     }
+
 
     // Update is called once per frame
     void Update()
     {
-        if(transform.position.x < -spriteWidth)
+        if (transform.position.x < -spriteWidth * 1.1f) // Ajusta el 1.1 según sea necesario
         {
             ResetPosition();
         }
     }
     private void ResetPosition()
     {
-        transform.Translate(new Vector3(2 * spriteWidth, 0f, 0f));
+        float maxX = -Mathf.Infinity;
+
+        // Busca el fondo más a la derecha
+        foreach (GameObject fondo in GameObject.FindGameObjectsWithTag("fondo"))
+        {
+            if (fondo.transform.position.x > maxX)
+            {
+                maxX = fondo.transform.position.x;
+            }
+        }
+
+        // Mueve el fondo actual justo detrás del último
+        transform.position = new Vector3(maxX + spriteWidth, transform.position.y, transform.position.z);
     }
+
+
 }
+

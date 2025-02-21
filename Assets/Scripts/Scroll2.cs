@@ -2,19 +2,27 @@ using UnityEngine;
 
 public class Scroll1 : MonoBehaviour
 {
-    [SerializeField] private float speed = 2.5f;  // Velocidad de desplazamiento
-    [SerializeField] private float resetX = -10f; // Límite izquierdo donde se reinicia
-    [SerializeField] private float spacing = 2.5f; // Espaciado constante entre tubos
-    [SerializeField] private float minY = -2f;    // Altura mínima aleatoria
-    [SerializeField] private float maxY = 2f;     // Altura máxima aleatoria
+    [SerializeField] private float speed = 45.5f;  // Velocidad de desplazamiento
+    [SerializeField] private float resetX = -200f; // Límite izquierdo donde se reinicia
+    [SerializeField] private float spacing = 100.5f; // Espaciado constante entre tubos
+    [SerializeField] private float minY = 500f;    // Altura mínima aleatoria
+    [SerializeField] private float maxY = 700f;     // Altura máxima aleatoria
 
     private Rigidbody2D rb;
 
-    void Start()
+   void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.linearVelocity = Vector2.left * speed;  // Sincroniza la velocidad de desplazamiento
+        rb.linearVelocity = Vector2.left * speed;
+
+        // Ajustar la posición inicial solo si está fuera del rango
+        if (transform.position.y < minY || transform.position.y > maxY)
+        {
+            float newY = Random.Range(minY, maxY);
+            transform.position = new Vector3(transform.position.x, newY, transform.position.z);
+        }
     }
+
 
     void Update()
     {
@@ -34,9 +42,6 @@ public class Scroll1 : MonoBehaviour
 
         // Reposiciona el tubo al final del último tubo más un espacio constante
         transform.position = new Vector3(maxX + spacing, randomY, transform.position.z);
-
-        // Debug opcional para verificar posiciones
-        Debug.Log($"Reposicionando tubo a X: {maxX + spacing}, Y: {randomY}");
     }
 
     private float FindFarthestTube()

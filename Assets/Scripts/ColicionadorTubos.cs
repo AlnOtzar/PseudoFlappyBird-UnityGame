@@ -57,6 +57,7 @@ public class ColicionadorTubos : MonoBehaviour
         }
     }
 
+    /*
     void Update()
     {
         timer += Time.deltaTime;
@@ -67,10 +68,10 @@ public class ColicionadorTubos : MonoBehaviour
             ChangeTexture();
         }
     }
-
     void ChangeTexture()
     {
         currentTextureIndex = (currentTextureIndex + 1) % pipeTextures.Length;
         pipeRenderer.sprite = pipeTextures[currentTextureIndex];
     }
+    */
 }

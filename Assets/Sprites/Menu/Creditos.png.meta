@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 20bddb40be8df57428cb314d96ece58c
+guid: 5ab0732bde984214984e17b9f0b52a83
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4130640169021434097
-    second: 5_0
+      213: 7175261627662145010
+    second: Creditos_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,16 +109,29 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 5_0
+      name: Creditos_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
+        width: 1080
         height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -128,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1f86b71495bf25930800000000000000
-      internalID: 4130640169021434097
+      spriteID: 2f51b472f66a39360800000000000000
+      internalID: 7175261627662145010
       vertices: []
       indices: 
       edges: []
@@ -148,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      5_0: 4130640169021434097
+      Creditos_0: 7175261627662145010
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

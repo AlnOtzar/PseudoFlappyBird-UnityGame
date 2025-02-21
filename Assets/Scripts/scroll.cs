@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class scroll : MonoBehaviour
 {
-    [SerializeField] private float speed = 2.5f;
+    [SerializeField] private float speed = 900.5f;
     private Rigidbody2D rb;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

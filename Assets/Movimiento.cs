@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Movimiento : MonoBehaviour
 {
-    [SerializeField] private float upForce = 350f;
+    [SerializeField] private float upForce = 151550f;
 
     private bool estaMuerto;
     private Rigidbody2D playerRB;
