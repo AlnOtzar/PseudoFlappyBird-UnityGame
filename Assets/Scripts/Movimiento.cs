@@ -36,5 +36,7 @@ public class Movimiento : MonoBehaviour
     {
         estaMuerto = true;
         playerAnimator.SetTrigger("Die");
+        Debug.Log("GameOver llamado"); // Verificar si se ejecuta
+        GameManager.Instance.GameOver();
     }
 }

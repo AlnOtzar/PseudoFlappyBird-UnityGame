@@ -15,6 +15,8 @@ public class scroll : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(GameManager.Instance.isGamerOver){
+            rb.linearVelocity = Vector2.zero;
+        }
     }
 }

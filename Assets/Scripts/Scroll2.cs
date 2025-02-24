@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Scroll1 : MonoBehaviour
 {
-    [SerializeField] private float speed = 45.5f;  // Velocidad de desplazamiento
+    [SerializeField] private float speed = 75.5f;  // Velocidad de desplazamiento
     [SerializeField] private float resetX = -200f; // Límite izquierdo donde se reinicia
     [SerializeField] private float spacing = 100.5f; // Espaciado constante entre tubos
     [SerializeField] private float minY = 500f;    // Altura mínima aleatoria
@@ -26,9 +26,13 @@ public class Scroll1 : MonoBehaviour
 
     void Update()
     {
-        if (transform.position.x < resetX)  // Si el tubo sale de la pantalla
+        if (transform.position.x < resetX * .8)  // Si el tubo sale de la pantalla
         {
             ResetPosition();
+            
+        }
+        if(GameManager.Instance.isGamerOver){
+            rb.linearVelocity = Vector2.zero;
         }
     }
 

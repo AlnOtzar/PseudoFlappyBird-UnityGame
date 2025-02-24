@@ -56,22 +56,4 @@ public class ColicionadorTubos : MonoBehaviour
             pipeRenderer.sprite = pipeTextures[currentTextureIndex];
         }
     }
-
-    /*
-    void Update()
-    {
-        timer += Time.deltaTime;
-
-        if(timer >= changeInterval)
-        {
-            timer = 0f;
-            ChangeTexture();
-        }
-    }
-    void ChangeTexture()
-    {
-        currentTextureIndex = (currentTextureIndex + 1) % pipeTextures.Length;
-        pipeRenderer.sprite = pipeTextures[currentTextureIndex];
-    }
-    */
 }
