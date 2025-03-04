@@ -1383,9 +1383,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a321baebc67019e42b2505ab92766974, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 190
+  speed: 1000
   resetX: -400
-  spacing: 300
+  spacing: 200
   minY: 450
   maxY: 750
 --- !u!1 &402685987
@@ -2124,9 +2124,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a321baebc67019e42b2505ab92766974, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 190
+  speed: 1000
   resetX: -400
-  spacing: 300
+  spacing: 200
   minY: 450
   maxY: 750
 --- !u!1 &806521467
@@ -2707,7 +2707,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2def9ca6b201784439cf546a21509808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 200
+  speed: 500
 --- !u!114 &874105050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3056,9 +3056,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a321baebc67019e42b2505ab92766974, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 190
+  speed: 1000
   resetX: -400
-  spacing: 300
+  spacing: 200
   minY: 450
   maxY: 750
 --- !u!1 &1177804464
@@ -3499,9 +3499,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a321baebc67019e42b2505ab92766974, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 190
+  speed: 1000
   resetX: -400
-  spacing: 300
+  spacing: 200
   minY: 450
   maxY: 750
 --- !u!1 &1609332698
@@ -3838,9 +3838,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a321baebc67019e42b2505ab92766974, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 190
+  speed: 1000
   resetX: -400
-  spacing: 300
+  spacing: 200
   minY: 450
   maxY: 750
 --- !u!1 &1722840829
@@ -4044,9 +4044,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a321baebc67019e42b2505ab92766974, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 190
+  speed: 1000
   resetX: -400
-  spacing: 300
+  spacing: 200
   minY: 450
   maxY: 750
 --- !u!1 &1836052730
@@ -4824,7 +4824,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2def9ca6b201784439cf546a21509808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 200
+  speed: 500
 --- !u!61 &2093094984
 BoxCollider2D:
   m_ObjectHideFlags: 0
