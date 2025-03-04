@@ -12,6 +12,7 @@ TagManager:
   - puntuacion
   - fondo
   - PuntuacionFinalText
+  - puntosFinal
   layers:
   - Default
   - TransparentFX
