@@ -1,32 +1,37 @@
-using Unity.VisualScripting;
-using UnityEngine.SceneManagement;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using TMPro;  // Necesario para usar TextMesh Pro
 
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private GameObject gameOverText;
+    [SerializeField] private TMP_Text puntuacionFinalText; // Para el componente TMP_Text de TextMesh Pro
 
     public bool isGamerOver;
+
     private static GameManager instance;
-    public static GameManager Instance { get {return instance;} }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public static GameManager Instance { get { return instance; } }
+
+    // Referencia al script ControlPuntuacion
+
     void Awake()
     {
-        if(instance == null){
+        if (instance == null)
+        {
             instance = this;
         }
-        else{
+        else
+        {
             Destroy(gameObject);
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButton(0) && isGamerOver){
+        if (Input.GetMouseButton(0) && isGamerOver)
+        {
             RestartGame();
         }
-        
     }
 
     public void GameOver()
@@ -35,7 +40,9 @@ public class GameManager : MonoBehaviour
         gameOverText.SetActive(true);
     }
 
-    private void RestartGame(){
+
+    private void RestartGame()
+    {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
