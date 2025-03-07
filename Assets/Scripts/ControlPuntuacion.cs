@@ -3,45 +3,39 @@ using TMPro;
 
 public class ControlPuntuacion : MonoBehaviour
 {
-    private TMP_Text puntosTexto;
+    [SerializeField] private TextMeshProUGUI puntosTexto;  // Se asigna desde el Inspector
+    [SerializeField] private TextMeshProUGUI puntosRecord; // Se asigna desde el Inspector
     public int puntuacion = 0;  // Puntuación del jugador
 
     void Start()
     {
-        // Encuentra el objeto con el tag "puntos" y asigna el componente TMP_Text
-        GameObject puntosObject = GameObject.FindGameObjectWithTag("puntos");
-
-        if (puntosObject != null)
+        // Verificar si los objetos están asignados en el Inspector
+        if (puntosTexto == null || puntosRecord == null)
         {
-            puntosTexto = puntosObject.GetComponent<TMP_Text>();
-            ActualizarTextoPuntuacion();
+            Debug.LogError("TextMeshProUGUI no está asignado en el Inspector.");
+            return;
         }
-        else
+
+        puntosTexto.text = puntuacion.ToString();
+        puntosRecord.text = PlayerPrefs.GetInt("BestScore", 0).ToString();
+    }
+
+    public void ActualizarRecordPuntuacion()
+    {
+        int bestScore = PlayerPrefs.GetInt("BestScore", 0);
+
+        if (puntuacion > bestScore)
         {
-            Debug.LogError("No se encontró el objeto con el tag 'puntos'. Verifica que el TextMeshPro tenga el tag correcto.");
+            PlayerPrefs.SetInt("BestScore", puntuacion);  // Corregido el typo
+            PlayerPrefs.Save();  // Guardar cambios
+            puntosRecord.text = puntuacion.ToString();
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D col)
+    public void ActualizarPuntuacion()
     {
-        if (col.CompareTag("puntuacion"))
-        {
-            puntuacion++;  // Incrementar la puntuación
-            ActualizarTextoPuntuacion();
-        }
-    }
-
-    private void ActualizarTextoPuntuacion()
-    {
-        if (puntosTexto != null)
-        {
-            puntosTexto.text = puntuacion.ToString();  // Actualizar el texto en pantalla
-        }
-    }
-
-    // Este método permitirá al GameManager obtener la puntuación actualizada
-    public int ObtenerPuntuacion()
-    {
-        return puntuacion;
+        puntuacion++;
+        puntosTexto.text = puntuacion.ToString();
+        ActualizarRecordPuntuacion();  // Se debe actualizar el récord, no llamarse a sí mismo
     }
 }

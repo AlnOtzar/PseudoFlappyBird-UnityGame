@@ -267,7 +267,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1156310173118582041}
   - component: {fileID: 6091068582912522312}
-  - component: {fileID: 4844021695143640810}
+  - component: {fileID: 8550350818903887118}
   m_Layer: 3
   m_Name: Puntuacion
   m_TagString: puntuacion
@@ -336,7 +336,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.202652, y: 3.2849693}
   m_EdgeRadius: 0
---- !u!114 &4844021695143640810
+--- !u!114 &8550350818903887118
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -345,10 +345,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 6186791612177844744}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2456df8e7a28a97468fcec73db9866f3, type: 3}
+  m_Script: {fileID: 11500000, guid: 69b6ce6d9612107458971c34b7c1e283, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puntuacion: 0
 --- !u!1 &8916258202333661588
 GameObject:
   m_ObjectHideFlags: 0

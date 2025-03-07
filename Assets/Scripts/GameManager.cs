@@ -5,7 +5,6 @@ using TMPro;  // Necesario para usar TextMesh Pro
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private GameObject gameOverText;
-    [SerializeField] private TMP_Text puntuacionFinalText; // Para el componente TMP_Text de TextMesh Pro
 
     public bool isGamerOver;
 

@@ -15,7 +15,7 @@ public class repeat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.x < -spriteWidth * 0.485) // Ajusta el 1.1 según sea necesario
+        if (transform.position.x < -spriteWidth * 0.475) // Ajusta el 1.1 según sea necesario
         {
             ResetPosition();
         }
