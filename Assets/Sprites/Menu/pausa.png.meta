@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5b15271bd00eea141867d66ce2ba0b1b
+guid: f157ab698d02b634e9cc0cd244de9995
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -61237271822417405
-    second: Jugar 1_0
+      213: 7136663939618353361
+    second: pausa_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Jugar 1_0
+      name: pausa_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 302c2069601762ff0800000000000000
-      internalID: -61237271822417405
+      spriteID: 1d0ba4a9a068a0360800000000000000
+      internalID: 7136663939618353361
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Jugar 1_0: -61237271822417405
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
