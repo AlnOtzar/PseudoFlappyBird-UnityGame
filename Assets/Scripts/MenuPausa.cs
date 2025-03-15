@@ -28,5 +28,7 @@ public class MenuPausa : MonoBehaviour
     public void VolverInicio(string inicio){
         SceneManager.LoadScene(inicio);
     }
+
+    
     
 }

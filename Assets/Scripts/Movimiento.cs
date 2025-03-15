@@ -3,6 +3,8 @@ using UnityEngine;
 public class Movimiento : MonoBehaviour
 {
     [SerializeField] private float upForce = 151550f;
+    [SerializeField] private AudioSource musicaFondo;
+    [SerializeField] private AudioSource efectoMuerte;
 
     private bool estaMuerto;
     private Rigidbody2D playerRB;
@@ -13,7 +15,6 @@ public class Movimiento : MonoBehaviour
     {
         playerRB = GetComponent<Rigidbody2D>();
         playerAnimator = GetComponent<Animator>(); // Inicialización del Animator
-
     }
 
     // Update is called once per frame
@@ -36,7 +37,18 @@ public class Movimiento : MonoBehaviour
     {
         estaMuerto = true;
         playerAnimator.SetTrigger("Die");
-        Debug.Log("GameOver llamado"); // Verificar si se ejecuta
+
+        if (musicaFondo != null)
+        {
+            musicaFondo.Stop(); // Detiene la música de fondo
+        }
+
+        if (efectoMuerte != null)
+        {
+            efectoMuerte.Play(); // Suena el efecto de muerte
+        }
+
+        Debug.Log("GameOver llamado");
         GameManager.Instance.GameOver();
     }
 }
