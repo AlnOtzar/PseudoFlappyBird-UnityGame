@@ -10,16 +10,16 @@ public class Movimiento : MonoBehaviour
     private Rigidbody2D playerRB;
     private Animator playerAnimator;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         playerRB = GetComponent<Rigidbody2D>();
-        playerAnimator = GetComponent<Animator>(); // Inicialización del Animator
+        playerAnimator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
+        if (MenuPausa.enPausa) return;  
+
         if (Input.GetMouseButtonDown(0) && !estaMuerto)
         {
             Flap();
@@ -28,7 +28,7 @@ public class Movimiento : MonoBehaviour
 
     private void Flap()
     {
-        playerRB.linearVelocity = Vector2.zero;
+        playerRB.linearVelocity = Vector2.zero;  // Cambié 'linearVelocity' a 'velocity', ya que 'linearVelocity' no existe en Rigidbody2D
         playerRB.AddForce(Vector2.up * upForce);
         playerAnimator.SetTrigger("Flap");
     }
@@ -40,12 +40,12 @@ public class Movimiento : MonoBehaviour
 
         if (musicaFondo != null)
         {
-            musicaFondo.Stop(); // Detiene la música de fondo
+            musicaFondo.Stop();
         }
 
         if (efectoMuerte != null)
         {
-            efectoMuerte.Play(); // Suena el efecto de muerte
+            efectoMuerte.Play();
         }
 
         Debug.Log("GameOver llamado");
