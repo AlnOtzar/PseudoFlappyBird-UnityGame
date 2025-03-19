@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: eedaca640022f674c956435750d950ed
+guid: e02e09db6a61b2841b23e01ea4a015aa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 172025101441642063
-    second: Menu pausa_0
+      213: -26296168431203664
+    second: "35 sin t\xEDtulo_20250318190640_0"
+  - first:
+      213: 7505511355450430635
+    second: "35 sin t\xEDtulo_20250318190640_1"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,43 +99,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Menu pausa_0
+      name: "35 sin t\xEDtulo_20250318190640_0"
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1080
-        height: 1080
+        x: 12
+        y: 87
+        width: 690
+        height: 877
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +118,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f4e21e71be7236200800000000000000
-      internalID: 172025101441642063
+      spriteID: 0ba44bd26c392aff0800000000000000
+      internalID: -26296168431203664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "35 sin t\xEDtulo_20250318190640_1"
+      rect:
+        serializedVersion: 2
+        x: 1357
+        y: 57
+        width: 531
+        height: 910
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba49847dfcee82860800000000000000
+      internalID: 7505511355450430635
       vertices: []
       indices: 
       edges: []
@@ -160,8 +159,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Menu pausa_0: 172025101441642063
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
