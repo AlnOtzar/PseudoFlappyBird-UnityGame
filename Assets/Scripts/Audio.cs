@@ -1,9 +1,10 @@
 using UnityEngine;
 using System.Collections;
 
+
 public class Audio : MonoBehaviour
 {
-    private AudioSource music; // Nombre correcto de la variable
+    private AudioSource music;
     public AudioClip ClickAudio;
     public AudioClip switchAudio;
 

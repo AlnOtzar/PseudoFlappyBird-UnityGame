@@ -901,8 +901,8 @@ Transform:
   m_GameObject: {fileID: 519525568}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.7, y: 0.58, z: 0.008664268}
-  m_LocalScale: {x: 3.495459, y: 1.753754, z: 1.4336}
+  m_LocalPosition: {x: -7.54731, y: -0.101627, z: 0.008664268}
+  m_LocalScale: {x: 2.1964028, y: 0.95321053, z: 0.94087166}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 236243241}
@@ -993,17 +993,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -3.0136814}
+  m_Offset: {x: 0, y: -4.65}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 12, y: 6.75}
+    oldSize: {x: 19.2, y: 10.8}
     newSize: {x: 12.03, y: 6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 12.03, y: 0.48451495}
+  m_Size: {x: 20, y: 0.48451495}
   m_EdgeRadius: 0
 --- !u!212 &519525574
 SpriteRenderer:
@@ -1049,7 +1049,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -5
-  m_Sprite: {fileID: 5959483883426803423, guid: 1299ee17b6e79b34e902b16fdd04b591, type: 3}
+  m_Sprite: {fileID: -1568682445909747854, guid: 12aed8a494eb307438c2a4a05a19da33, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1454,8 +1454,8 @@ Transform:
   m_GameObject: {fileID: 714269506}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 29.6, y: 0.5799999, z: 0.008664268}
-  m_LocalScale: {x: 3.495459, y: 1.753754, z: 1.4336}
+  m_LocalPosition: {x: 34.5669, y: -0.101627, z: 0.008664268}
+  m_LocalScale: {x: 2.196403, y: 0.9532105, z: 0.9408717}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 236243241}
@@ -1546,17 +1546,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -3.0072923}
+  m_Offset: {x: 0, y: -4.65}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 12, y: 6.75}
+    oldSize: {x: 19.2, y: 10.8}
     newSize: {x: 12.03, y: 6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 12.03, y: 0.5754521}
+  m_Size: {x: 20, y: 0.484515}
   m_EdgeRadius: 0
 --- !u!212 &714269512
 SpriteRenderer:
@@ -1602,7 +1602,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -5
-  m_Sprite: {fileID: 5959483883426803423, guid: 1299ee17b6e79b34e902b16fdd04b591, type: 3}
+  m_Sprite: {fileID: -1568682445909747854, guid: 12aed8a494eb307438c2a4a05a19da33, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3222,8 +3222,8 @@ Transform:
   m_GameObject: {fileID: 1963358470}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 69.9, y: 0.5799999, z: 0.008664268}
-  m_LocalScale: {x: 3.495459, y: 1.753754, z: 1.4336}
+  m_LocalPosition: {x: 76.75, y: -0.101627, z: 0.008664268}
+  m_LocalScale: {x: 2.196403, y: 0.9532105, z: 0.9408717}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 236243241}
@@ -3314,17 +3314,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -3.0035982}
+  m_Offset: {x: 0, y: -4.65}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 12, y: 6.75}
+    oldSize: {x: 19.2, y: 10.8}
     newSize: {x: 12.03, y: 6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 12.03, y: 0.5565808}
+  m_Size: {x: 20, y: 0.484515}
   m_EdgeRadius: 0
 --- !u!212 &1963358476
 SpriteRenderer:
@@ -3370,7 +3370,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -5
-  m_Sprite: {fileID: 5959483883426803423, guid: 1299ee17b6e79b34e902b16fdd04b591, type: 3}
+  m_Sprite: {fileID: -1568682445909747854, guid: 12aed8a494eb307438c2a4a05a19da33, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3500,7 +3500,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 1aa4dcb0011c76a4991ea18e5ead4a78, type: 3}
   m_Resource: {fileID: 8300000, guid: 1aa4dcb0011c76a4991ea18e5ead4a78, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.128
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 1
   Mute: 0

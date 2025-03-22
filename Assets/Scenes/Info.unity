@@ -426,6 +426,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ClickAudio: {fileID: 8300000, guid: 500cb2fd21987ac48b377c6d0b724209, type: 3}
   switchAudio: {fileID: 8300000, guid: d4305fb293faa584fac71bf30c99d204, type: 3}
+  slider: {fileID: 0}
+  sliderValor: 0
+  imagenMute: {fileID: 0}
 --- !u!82 &857096460
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1058,7 +1061,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2094002013}
   m_LocalRotation: {x: 0.20412728, y: 0.9703411, z: -0.026659003, w: 0.12672646}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -70}
   m_LocalScale: {x: 3.4622, y: 3.4622, z: 3.4622}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1066,7 +1069,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 5.939, y: 166.331, z: 23.047}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -148, y: 133}
+  m_AnchoredPosition: {x: -128, y: 805}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2094002015
