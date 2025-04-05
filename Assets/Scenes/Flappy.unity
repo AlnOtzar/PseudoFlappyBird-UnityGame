@@ -2247,10 +2247,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2002668007}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -8.9354, y: 474}
-  m_SizeDelta: {x: 51.2907, y: 20.927}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: -8.9354, y: -66}
+  m_SizeDelta: {x: 51.2907, y: 20.927002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1475431917
 MonoBehaviour:
@@ -3598,6 +3598,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   botonPausa: {fileID: 1475431914}
   menuPausa: {fileID: 638986542}
+  musicaFondo: {fileID: 2002668009}
 --- !u!1 &2005312634
 GameObject:
   m_ObjectHideFlags: 0
@@ -3971,7 +3972,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.4553393, y: 1.5294466}
+  m_Size: {x: 1.4, y: 1.4}
   m_EdgeRadius: 0
 --- !u!50 &2102176308
 Rigidbody2D:

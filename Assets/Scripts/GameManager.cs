@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
         gameOverText.SetActive(true);
     }
 
-    // 🔥 Cambiado a 'public' para que pueda ser llamado desde Movimiento
+    // Cambiado a 'public' para que pueda ser llamado desde Movimiento
     public void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

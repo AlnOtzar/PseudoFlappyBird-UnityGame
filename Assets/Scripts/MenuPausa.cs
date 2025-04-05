@@ -7,36 +7,58 @@ public class MenuPausa : MonoBehaviour
 {
     [SerializeField] private GameObject botonPausa;
     [SerializeField] private GameObject menuPausa;
+    [SerializeField] private AudioSource musicaFondo; // 🎵 Referencia a la música
 
     public static bool enPausa = false;
 
-    public void Pausa(){
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (enPausa)
+                Reanudar();
+            else
+                Pausa();
+        }
+    }
+
+    public void Pausa()
+    {
         enPausa = true;
         Time.timeScale = 0f;
         botonPausa.SetActive(false);
         menuPausa.SetActive(true);
+
+        if (musicaFondo != null)
+        {
+            musicaFondo.Pause(); // 🎵 Pausa la música
+        }
     }
 
-    public void Reanudar(){
+    public void Reanudar()
+    {
         enPausa = false;
         Time.timeScale = 1f;
         botonPausa.SetActive(true);
         menuPausa.SetActive(false);
+
+        if (musicaFondo != null)
+        {
+            musicaFondo.UnPause(); // 🎵 Reanuda la música
+        }
     }
 
-    public void Reiniciar(){
+    public void Reiniciar()
+    {
         enPausa = false;
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    public void VolverInicio(string inicio){
+    public void VolverInicio(string inicio)
+    {
         enPausa = false;
         SceneManager.LoadScene(inicio);
         Time.timeScale = 1f;
-
     }
-
-    
-    
 }

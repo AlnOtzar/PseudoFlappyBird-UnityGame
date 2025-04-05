@@ -18,13 +18,14 @@ public class Movimiento : MonoBehaviour
 
     void Update()
     {
-        if (MenuPausa.enPausa) return;  
+    if (MenuPausa.enPausa) return;  
 
-        if (Input.GetMouseButtonDown(0) && !estaMuerto)
+    if ((Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space)) && !estaMuerto)
         {
             Flap();
         }
     }
+
 
     private void Flap()
     {
