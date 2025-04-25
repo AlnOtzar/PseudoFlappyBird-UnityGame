@@ -7,7 +7,7 @@ public class MenuPausa : MonoBehaviour
 {
     [SerializeField] private GameObject botonPausa;
     [SerializeField] private GameObject menuPausa;
-    [SerializeField] private AudioSource musicaFondo; // 🎵 Referencia a la música
+    [SerializeField] private AudioSource musicaFondo; 
 
     public static bool enPausa = false;
 
@@ -31,7 +31,7 @@ public class MenuPausa : MonoBehaviour
 
         if (musicaFondo != null)
         {
-            musicaFondo.Pause(); // 🎵 Pausa la música
+            musicaFondo.Pause(); 
         }
     }
 
@@ -44,7 +44,7 @@ public class MenuPausa : MonoBehaviour
 
         if (musicaFondo != null)
         {
-            musicaFondo.UnPause(); // 🎵 Reanuda la música
+            musicaFondo.UnPause(); 
         }
     }
 

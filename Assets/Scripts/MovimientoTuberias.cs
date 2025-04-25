@@ -7,12 +7,12 @@ public class Scroll1 : MonoBehaviour
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>(); // Inicializa el Rigidbody2D
+        rb = GetComponent<Rigidbody2D>(); 
     }
 
     void Update()
     {
-        if (!GameManager.Instance.isGamerOver) // Solo se mueven si el juego NO ha terminado
+        if (!GameManager.Instance.isGamerOver) 
         {
             transform.position += Vector3.left * speed * Time.deltaTime;
         }

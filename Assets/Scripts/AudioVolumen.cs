@@ -10,23 +10,23 @@ public class AudioVolumen : MonoBehaviour
     void Start()
     {
         sliderValue = PlayerPrefs.GetFloat("volumenAudio", 0.5f);
-        slider.value = sliderValue; // Corregido
+        slider.value = sliderValue; 
         AudioListener.volume = sliderValue;
         RevisaMute();
     }
 
     public void CambiarSlider(float valor)
     {
-        sliderValue = valor; // Corregido
-        slider.value = sliderValue; // Corregido
+        sliderValue = valor; 
+        slider.value = sliderValue; 
         PlayerPrefs.SetFloat("volumenAudio", sliderValue);
-        AudioListener.volume = sliderValue; // Corregido
+        AudioListener.volume = sliderValue; 
         RevisaMute();
     }
 
     public void RevisaMute()
     {
-        if (imagenMute != null) // Evitar error si no está asignada
+        if (imagenMute != null)
         {
             imagenMute.enabled = (sliderValue == 0);
         }

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class SpawnFondo : MonoBehaviour
 {
-    public GameObject[] fondoPrefabs;  // Ahora es un array de Prefabs en lugar de Sprites
+    public GameObject[] fondoPrefabs; 
     public float heightRange = 20.5f;
     public float maxTime = 1.75f;
 
@@ -36,14 +36,11 @@ public class SpawnFondo : MonoBehaviour
             return;
         }
 
-        // Selecciona un prefab aleatorio
         GameObject selectedPrefab = fondoPrefabs[Random.Range(0, fondoPrefabs.Length)];
 
-        // Instancia el prefab a la misma altura que el objeto SpawnFondo
         Vector3 spawnPosition = new Vector3(transform.position.x, transform.position.y, transform.position.z);
         GameObject newFondo = Instantiate(selectedPrefab, spawnPosition, Quaternion.identity);
 
-        // Destruir después de un tiempo para evitar acumulación
         Destroy(newFondo, desTime);
     }
 

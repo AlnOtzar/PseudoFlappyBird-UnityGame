@@ -29,7 +29,7 @@ public class Movimiento : MonoBehaviour
 
     private void Flap()
     {
-        playerRB.linearVelocity = Vector2.zero;  // Cambié 'linearVelocity' a 'velocity', ya que 'linearVelocity' no existe en Rigidbody2D
+        playerRB.linearVelocity = Vector2.zero;  
         playerRB.AddForce(Vector2.up * upForce);
         playerAnimator.SetTrigger("Flap");
     }

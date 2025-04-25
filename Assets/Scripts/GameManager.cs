@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using TMPro;  // Necesario para usar TextMesh Pro
+using TMPro;  
 
 public class GameManager : MonoBehaviour
 {
@@ -11,7 +11,6 @@ public class GameManager : MonoBehaviour
     private static GameManager instance;
     public static GameManager Instance { get { return instance; } }
 
-    // Referencia al script ControlPuntuacion
 
     void Awake()
     {
@@ -39,7 +38,6 @@ public class GameManager : MonoBehaviour
         gameOverText.SetActive(true);
     }
 
-    // Cambiado a 'public' para que pueda ser llamado desde Movimiento
     public void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
