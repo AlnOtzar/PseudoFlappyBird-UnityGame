@@ -30,18 +30,31 @@ public class SpawnFondo : MonoBehaviour
 
     void SpawnFondoPrefab()
     {
-        if (fondoPrefabs == null || fondoPrefabs.Length == 0)
-        {
-            Debug.LogError("No hay prefabs de fondo asignados.");
-            return;
-        }
+
 
         GameObject selectedPrefab = fondoPrefabs[Random.Range(0, fondoPrefabs.Length)];
 
         Vector3 spawnPosition = new Vector3(transform.position.x, transform.position.y, transform.position.z);
         GameObject newFondo = Instantiate(selectedPrefab, spawnPosition, Quaternion.identity);
+        StartCoroutine(DestruirSiSigueActivo(newFondo, desTime));
 
-        Destroy(newFondo, desTime);
     }
+
+    private System.Collections.IEnumerator DestruirSiSigueActivo(GameObject obj, float delay)
+{
+    float elapsed = 0f;
+
+    while (elapsed < delay)
+    {
+        if (GameManager.Instance.isGamerOver)
+            yield break; 
+
+        elapsed += Time.deltaTime;
+        yield return null;
+    }
+
+    Destroy(obj);
+}
+
 
 }
